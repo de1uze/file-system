@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 24px;
+    color: #000000;
+    font-size: 14px;
+}
+
+.article {
+    width: 70%;
+    height: 200px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.article-title {
+    color: #3e5699;
+}
+
+.article-time {
+    color: #6d6e6c;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.find-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 300px;
+}
+
+.word-find {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.word {
+    font-weight: bold;
+}
+
+.phrase {
+    width: 50%;
+    color: #3e5699;
+    font-size: 18px;
+    margin: 0 0;
+}

@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Express</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  {{#each articles}}
+  <div class="article">
+    {{> article}}
+  </div>
+  {{/each}}
+
+<div class="container">
+  <h4 class="word-find">
+    Вместе с "<span class="word">{{ getWord phrases }}</span>" часто ищут
+  </h4>
+  <div class="find-block">
+  {{#each phrases}}
+  <div class="phrase">
+    {{> phrase}}
+  </div>
+  {{/each}}
+  </div>
+</div>
+
+</body>
+
+</html>
